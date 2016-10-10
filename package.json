@@ -1,28 +1,31 @@
 {
-  "name": "talky",
+  "name": "talkyweather",
   "version": "1.0.0",
-  "description": "Build a bot in Node.js on Microsoft Bot Framework.",
-  "main": "app.js",
+  "description": "weather",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/husamimagine/Talky.git"
+    "url": "git+https://github.com/SarahSexton/slackweather.git"
   },
-  "keywords": [
-    "bot",
-    "slack"
-  ],
-  "author": "husam fuad",
+  "author": "Sarah Sexton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/husamimagine/Talky/issues"
+    "url": "https://github.com/SarahSexton/slackweather/issues"
   },
-  "homepage": "https://github.com/husamimagine/Talky#readme",
+  "homepage": "https://github.com/SarahSexton/slackweather#readme",
   "dependencies": {
-    "botbuilder": "^3.2.3",
+    "botbuilder": "^1.0.1",
+    "http": "0.0.0",
     "https": "^1.0.0",
-    "restify": "^4.1.1"
-  }
+    "openweathermap": "^1.0.0",
+    "restify": "^4.1.1",
+    "wundergroundnode": "^0.9.0"
+  },
+  "keywords": [
+    "bot"
+  ]
 }
