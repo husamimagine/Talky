@@ -19,7 +19,7 @@ var myAppSecret = 'SXskNJ9FcpsNC03PUKjH5nY';
 // bot.add('/', new builder.SimpleDialog(function(session){session.send('Hello World'); })); 
 
 //Create bot and add dialogs
-var bot = new builder.BotConnectorBot({ appId: myAppId, appSecret: myAppSecret });
+var bot = new builder.BotConnectorBot({ appId: myAppId, appPassword: myAppSecret });
         // created a new BotConnetcorBot (as opposed to a TextBot).
 bot.add('/', new builder.CommandDialog()    
         //root ‘/’ dialog responds to any message.
