@@ -11,7 +11,7 @@ var wundergroundKey = '45b03453a793226b';
 var wunderground = new Wunderground(wundergroundKey);
     //is this redundant? 
 
-var myAppId = 'e0400e45-d40b-430e-a4b7-530daa1cfcb1';
+var myAppId = 'Talky_Test';
 var myAppSecret = 'SXskNJ9FcpsNC03PUKjH5nY';
 
 ////Hello World code
@@ -19,7 +19,7 @@ var myAppSecret = 'SXskNJ9FcpsNC03PUKjH5nY';
 // bot.add('/', new builder.SimpleDialog(function(session){session.send('Hello World'); })); 
 
 //Create bot and add dialogs
-var bot = new builder.BotConnectorBot({ appId: myAppId, appPassword: myAppSecret });
+var bot = new builder.BotConnectorBot({ appId: myAppId, appSecret: myAppSecret });
         // created a new BotConnetcorBot (as opposed to a TextBot).
 bot.add('/', new builder.CommandDialog()    
         //root ‘/’ dialog responds to any message.
